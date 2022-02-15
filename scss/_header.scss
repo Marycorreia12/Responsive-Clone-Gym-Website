@@ -1,0 +1,85 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 10%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+    .logo{
+        flex: 1;
+        img{
+            width: 130px;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        li{
+            position: relative;
+            margin-right: 1.5rem;
+
+            a{
+                padding: .5rem;
+                font-size: 1.2rem;
+                font-weight:700;
+
+                i{
+                    font-size: .9rem;
+                    margin-left: .5rem;
+                }
+
+                &:hover{
+                    color: $background;
+                    @include ease;  
+                    display: initial;
+                }
+            }
+
+            &:hover ul{
+                display: initial;
+            }
+        }
+
+        .navbar-item{
+            position: absolute;
+            background: #fff;
+            top: 30px;
+            left: 0;
+            width: 150px;
+            display: none;
+
+            li{
+                width: 100%;
+
+                a{
+                    display: block;
+                    padding: .5rem;
+                    font-size: 1.2rem;
+                    font-weight: normal;
+
+                    &:hover{
+                        color: $background;
+                        background: rgb(241, 223, 201);
+                    }
+                }
+            }
+        }
+    }
+
+    .icons{
+        i{
+            font-size: 1.3rem;
+            margin-right: .5rem;
+            transition: 1s;
+
+            &:hover{
+                transform: scale(1.2)
+            }
+        }
+    }
+}
