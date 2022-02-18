@@ -17,14 +17,24 @@
 #header .logo img {
   width: 130px;
 }
+#header .fa-bars {
+  font-size: 1.5rem;
+  color: orange;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
 #header .navbar {
   display: flex;
 }
 #header .navbar li {
   position: relative;
   margin-right: 1.5rem;
+  line-height: 40px;
 }
 #header .navbar li a {
+  display: block;
+  width: 100%;
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -35,32 +45,28 @@
 }
 #header .navbar li a:hover {
   color: orange;
-  transition: all 0.3s ease;
-  display: initial;
+  background: #f1dfc9;
+  transition: all 0.2s ease;
 }
-#header .navbar li:hover ul {
+#header .navbar li:hover .navbar-item {
   display: initial;
 }
 #header .navbar .navbar-item {
   position: absolute;
   background: #fff;
-  top: 30px;
+  top: 100%;
   left: 0;
-  width: 150px;
+  width: 100%;
   display: none;
 }
 #header .navbar .navbar-item li {
   width: 100%;
 }
 #header .navbar .navbar-item li a {
+  width: 100%;
   display: block;
-  padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: normal;
-}
-#header .navbar .navbar-item li a:hover {
-  color: orange;
-  background: #f1dfc9;
 }
 #header .icons i {
   font-size: 1.3rem;
@@ -68,9 +74,81 @@
   transition: 1s;
 }
 #header .icons i:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
+@media screen and (max-width: 1024px) {
+  #header .fa-bars {
+    display: block;
+    margin-right: 10px;
+  }
+  #header .fa-times {
+    transform: rotate(180deg);
+  }
+  #header .navbar {
+    position: absolute;
+    top: 100%;
+    left: -100rem;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header .navbar li a {
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+  #header .navbar li .navbar-item {
+    position: relative;
+  }
+  #header .navbar li .navbar-item li {
+    width: 100%;
+    text-align: center;
+  }
+  #header .navbar li .navbar-item li a {
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+  #header .navbar li .navbar-item .active {
+    display: initial;
+  }
+  #header .nav-toggle {
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #header {
+    padding: 0.5rem 5%;
+  }
+  #header .logo img {
+    width: 160px;
+  }
+  #header .navbar li {
+    line-height: 60px;
+  }
+  #header .navbar li a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #header {
+    padding: 0.5rem 3%;
+  }
+  #header .logo img {
+    width: 100px;
+  }
+  #header .fa-bars {
+    margin-right: 2rem;
+  }
+  #header .navbar li a {
+    font-size: 1rem;
+  }
+  #header .navbar li .navbar-item li a {
+    font-size: 1rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

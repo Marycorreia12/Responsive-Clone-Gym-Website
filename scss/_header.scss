@@ -17,13 +17,24 @@
         }
     }
 
+    .fa-bars{
+        font-size: 1.5rem;
+        color: $background;
+        cursor: pointer;
+        padding: .5rem;
+        display: none;
+    }
+
     .navbar{
         display: flex;
-        li{
+        li{   
             position: relative;
             margin-right: 1.5rem;
+            line-height: 40px;
 
             a{
+                display: block;
+                width: 100%;
                 padding: .5rem;
                 font-size: 1.2rem;
                 font-weight:700;
@@ -35,37 +46,33 @@
 
                 &:hover{
                     color: $background;
-                    @include ease;  
-                    display: initial;
+                    background: rgb(241, 223, 201);
+                    @include ease;
                 }
             }
 
-            &:hover ul{
-                display: initial;
+            &:hover .navbar-item{
+               display: initial;
             }
         }
 
-        .navbar-item{
+        .navbar-item {
             position: absolute;
             background: #fff;
-            top: 30px;
+            top: 100%;
             left: 0;
-            width: 150px;
+            width: 100%;
             display: none;
 
             li{
                 width: 100%;
-
                 a{
-                    display: block;
-                    padding: .5rem;
-                    font-size: 1.2rem;
+                    width: 100%;
+                    display: block; 
+                    font-size: 1.1rem;
                     font-weight: normal;
 
-                    &:hover{
-                        color: $background;
-                        background: rgb(241, 223, 201);
-                    }
+                    
                 }
             }
         }
@@ -78,7 +85,7 @@
             transition: 1s;
 
             &:hover{
-                transform: scale(1.2)
+                transform: scale(1.4)
             }
         }
     }

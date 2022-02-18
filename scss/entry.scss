@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Nunito:wght@200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap');
 @import 'config';
 @import 'header';
-
+@import 'mobile';
 
 *{
     box-sizing: border-box;
@@ -10,13 +10,13 @@
 }
 
 body{
-
     font-family: $font-family;
     font-size: $font-size;
     font-weight: $font-weight;
     line-height: $line-height;
     color: $bg-color;
 }
+
  a{
      text-decoration: none;
      color: $bg-color;

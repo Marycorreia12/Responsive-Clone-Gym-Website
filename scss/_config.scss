@@ -6,6 +6,32 @@ $bg-color: #333;
 $background: orange;
 
 @mixin ease{
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
+
+//Media Query Mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px){
+        @content;
+    }  
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 767px){
+        @content;
+    }    
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        @content;
+    }    
+}
+
+@mixin mediaXl {
+    @media screen and (max-width: 1024px){
+        @content;
+    }    
+}
+
 
