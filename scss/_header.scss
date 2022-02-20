@@ -27,15 +27,16 @@
     }
 
     .navbar{
-        display: flex;
+            display: flex;
+            margin-right: 2rem;
         li{   
+            
             position: relative;
-            margin-right: 1.5rem;
             line-height: 40px;
+            margin-right: 1rem;
 
             a{
                 display: block;
-                width: 100%;
                 padding: .5rem;
                 font-size: 1.2rem;
                 font-weight:700;
@@ -53,21 +54,23 @@
 
             &:hover .navbar-item{
                display: initial;
+               @include ease;
+               top: 100%;
             }
         }
 
         .navbar-item {
             position: absolute;
             background: #fff;
-            top: 100%;
+            top: -100%;
             left: 0;
-            width: 100%;
+            width: 150px;
+            z-index: -1;
             display: none;
 
             li{
                 width: 100%;
                 a{
-                    width: 100%;
                     display: block; 
                     font-size: 1.1rem;
                     font-weight: normal;

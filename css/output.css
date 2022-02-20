@@ -27,15 +27,15 @@
 }
 #header .navbar {
   display: flex;
+  margin-right: 2rem;
 }
 #header .navbar li {
   position: relative;
-  margin-right: 1.5rem;
   line-height: 40px;
+  margin-right: 1rem;
 }
 #header .navbar li a {
   display: block;
-  width: 100%;
   padding: 0.5rem;
   font-size: 1.2rem;
   font-weight: 700;
@@ -50,20 +50,22 @@
 }
 #header .navbar li:hover .navbar-item {
   display: initial;
+  transition: all 0.2s ease;
+  top: 100%;
 }
 #header .navbar .navbar-item {
   position: absolute;
   background: #fff;
-  top: 100%;
+  top: -100%;
   left: 0;
-  width: 100%;
+  width: 150px;
+  z-index: -1;
   display: none;
 }
 #header .navbar .navbar-item li {
   width: 100%;
 }
 #header .navbar .navbar-item li a {
-  width: 100%;
   display: block;
   font-size: 1.1rem;
   font-weight: normal;
@@ -100,6 +102,10 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+  }
+  #header .navbar li {
+    text-align: center;
+    width: 100%;
   }
   #header .navbar li a {
     font-weight: normal;
