@@ -25,6 +25,12 @@
                 a{
                     font-weight: normal;
                     font-size: 1.1rem;
+
+                    &:hover{
+                        color: $background;
+                        background: rgb(241, 223, 201);
+                        @include ease;
+                    }
                 }
 
                 .navbar-item{
@@ -105,6 +111,15 @@
 }
 //Smartphones
 @include mediaSm{
+    .slide{
+        .content{
+            bottom: -300px;
+            left: 0;
+            width: 100%;
+        }
+       
+
+    }
    
 
 }

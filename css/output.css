@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   z-index: 10;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +46,6 @@
 }
 #header .navbar li a:hover {
   color: orange;
-  background: #f1dfc9;
   transition: all 0.2s ease;
 }
 #header .navbar li:hover .navbar-item {
@@ -67,6 +67,11 @@
   display: block;
   font-size: 1.1rem;
   font-weight: normal;
+}
+#header .navbar .navbar-item li a:hover {
+  color: orange;
+  background: #f1dfc9;
+  transition: all 0.2s ease;
 }
 #header .icons i {
   font-size: 1.3rem;
@@ -99,6 +104,11 @@
   #header .navbar li a {
     font-weight: normal;
     font-size: 1.1rem;
+  }
+  #header .navbar li a:hover {
+    color: orange;
+    background: #f1dfc9;
+    transition: all 0.2s ease;
   }
   #header .navbar li .navbar-item {
     position: relative;
@@ -149,6 +159,82 @@
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+}
+#home-slider {
+  position: relative;
+  min-height: 100vh;
+}
+#home-slider .slider {
+  position: relative;
+  top: 12vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#home-slider .slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+}
+#home-slider .slider .slide.current {
+  opacity: 1;
+}
+#home-slider .slider .slide:first-child {
+  background: url("/assets/img/istockphoto-1345730197-170667a.jpg") no-repeat center center/cover;
+}
+#home-slider .slider .slide:nth-child(2) {
+  background: url("/assets/img/pexels-photo-1480520.jpeg") no-repeat center center/cover;
+}
+#home-slider .slider .slide:nth-child(3) {
+  background: url("/assets/img/pexels-photo-2247179.jpeg") no-repeat center center/cover;
+}
+#home-slider .slider .slide:nth-child(4) {
+  background: url("/assets/img/pexels-victor-freitas-841130.jpg") no-repeat center center/cover;
+}
+#home-slider .slider .slide .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 600px;
+}
+#home-slider .buttons button {
+  background: #313030;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+#home-slider .buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+#home-slider .buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+#home-slider .buttons button:hover {
+  background-color: orange;
+  color: #333;
+  transition: 0.2s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -161,6 +247,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #333;
+  outline: none;
 }
 
 a {
