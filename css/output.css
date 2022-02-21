@@ -11,6 +11,7 @@
   align-items: center;
   padding: 0.5rem 10%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 #header .logo {
   flex: 1;
