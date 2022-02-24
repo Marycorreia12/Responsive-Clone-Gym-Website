@@ -320,7 +320,7 @@
   margin-top: 1rem;
   background-color: #ff8800;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 #home-slider .slider .slide .contact {
@@ -387,7 +387,7 @@
 #home-cards {
   min-height: 60vh;
   position: relative;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 #home-cards .cards-container {
   display: flex;
@@ -402,10 +402,10 @@
 }
 #home-cards .cards-container .card {
   position: relative;
-  width: 430px;
+  width: 400px;
   height: 300px;
   transition: 1s;
-  flex: 1 1 240px;
+  flex: 1 1 220px;
 }
 #home-cards .cards-container .card img {
   width: 100%;
@@ -439,6 +439,54 @@
   background: rgba(128, 128, 128, 0.5);
 }
 
+.form-bg {
+  background: #ff8800;
+  width: 100%;
+}
+.form-bg .form {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.form-bg .form .input {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.form-bg .form .input input {
+  background: none;
+  padding: 0 50px 0 15px;
+  border: 1px solid #fff;
+  margin-right: 15px;
+  outline: none;
+}
+.form-bg .form .input input::placeholder {
+  color: #ddd1d1;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+.form-bg .form .input a {
+  padding: 10px 60px;
+  background: #fff;
+  color: #ff8800;
+  font-size: 20px;
+  font-weight: 600;
+}
+.form-bg .form .text {
+  color: #fff;
+}
+.form-bg .form .text p {
+  font-size: 20px;
+}
+.form-bg .form .text h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -469,7 +517,7 @@ ul {
   cursor: pointer;
   outline: none;
   border: none;
-  padding: 0.7rem 0;
+  padding: 0.7rem 2rem;
   width: 220px;
   text-align: center;
 }
