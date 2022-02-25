@@ -1,56 +1,146 @@
-.form-bg{
-    background: rgb(255, 136, 0);
-    width: 100%;
+.footer{
+    position: relative;
+    border-bottom: 5px solid rgb(255, 136, 0);
 
-    .form{
-        padding: 30px 0;
+    .form-bg{
+        background: rgb(255, 136, 0);
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 60px;
 
-        .input{
-            display: inline-flex;
+        .form-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 60px;
 
-                input{
-                background: none;
-                padding: 0 50px 0 15px;
-                border: 1px solid #fff;
-                margin-right: 15px;
-                outline: none;
+            .text{
+                color: #fff;
 
-                    &::placeholder{
-                        color: rgb(221, 209, 209);
-                        font-size: 16px;
-                        letter-spacing: .6px;
+                p{
+                    font-size: 20px;
+                }
+                h1{
+                    margin: 0;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        
+            .form{
+                display: inline-flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                    input{
+                        background: none;
+                        padding: 15px 60px 15px 15px;
+                        border: 1px solid #fff;
+                        margin-right: 15px;
+                        outline: none;
+
+                        &::placeholder{
+                            color: rgb(221, 209, 209);
+                            font-size: 16px;
+                            letter-spacing: .6px;
+                        }
+                    }
+
+                    .btn {
+                    background: #fff;
+
+                    a{
+                        color: rgb(255, 136, 0);
+                        font-size: 18px;
+                        font-weight: 600;
                     }
                 }
-
-                a{
-                    padding: 10px 60px;
-                    background: #fff;
-                    color: rgb(255, 136, 0);
-                    font-size: 20px;
-                    font-weight: 600;
-                }
-        }
-
-        .text{
-            color: #fff;
-
-            p{
-                font-size: 20px;
-            }
-            h1{
-                margin: 0;
-                font-size: 30px;
-                font-weight: 700;
-                text-transform: uppercase;
             }
         }
-    
     }
 
+    .map-info-bg{
+        position: absolute;
+        top: 180px;
+        left: 10%;
+        background: rgb(255, 136, 0);
+        width: 400px;
+        height: 280px;
+
+        .map-info-container{
+            width: 300px;
+            height: 100%;
+            margin: 0 auto;
+            padding-top:30px;
+            
+            p{
+                margin-bottom: 10px;
+                color: #fff;
+            }
+        }
+    }
+
+    .map-info{
+        position: absolute;
+        top: 150px;
+        right: 8%;
+        text-align: center;
+        width: 450px;
+        height: 350px;
+        background: #fff;
+        opacity: 0.8;
+        padding-top: 60px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        p{
+            text-align: center;
+            margin-top: 20px;
+         
+            color: rgb(102, 94, 94);
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .policy{
+        text-align: center;
+        margin: 30px 0;
+        height: 80px;
+
+        p{
+            color: black;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        span{
+            margin-left: 20px;
+            a{
+                font-size: 15px;
+                color: rgb(180, 45, 45);
+                font-weight: 600;
+            }
+        }
+    }
+
+    .reclama{
+        position: absolute;
+        top: 540px;
+        left: 8%;
+        font-size: 9px;
+        color: gray;
+        font-weight: bold;
+
+        span{
+            background: gray;
+            border-radius: 50%;
+            line-height: 40px;
+            padding: 15px 0;
+            color: #fff;
+        }
+    }
 }

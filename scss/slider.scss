@@ -141,10 +141,12 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: black;
     font-weight: bold;
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(233, 133, 19);
+    z-index: 10;
+    width: 200px !important;
 
     &:hover{
         background: rgb(78, 75, 75);

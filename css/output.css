@@ -373,10 +373,12 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: black;
   font-weight: bold;
-  background-color: #ff8800;
+  background-color: #e98513;
+  z-index: 10;
+  width: 200px !important;
 }
 .btn-bottom:hover {
   background: #4e4b4b;
@@ -406,6 +408,7 @@
   height: 300px;
   transition: 1s;
   flex: 1 1 220px;
+  cursor: pointer;
 }
 #home-cards .cards-container .card img {
   width: 100%;
@@ -439,52 +442,131 @@
   background: rgba(128, 128, 128, 0.5);
 }
 
-.form-bg {
-  background: #ff8800;
-  width: 100%;
+.footer {
+  position: relative;
+  border-bottom: 5px solid #ff8800;
 }
-.form-bg .form {
-  padding: 30px 0;
+.footer .form-bg {
+  background: #ff8800;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .form-bg .form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
 }
-.form-bg .form .input {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-.form-bg .form .input input {
-  background: none;
-  padding: 0 50px 0 15px;
-  border: 1px solid #fff;
-  margin-right: 15px;
-  outline: none;
-}
-.form-bg .form .input input::placeholder {
-  color: #ddd1d1;
-  font-size: 16px;
-  letter-spacing: 0.6px;
-}
-.form-bg .form .input a {
-  padding: 10px 60px;
-  background: #fff;
-  color: #ff8800;
-  font-size: 20px;
-  font-weight: 600;
-}
-.form-bg .form .text {
+.footer .form-bg .form-container .text {
   color: #fff;
 }
-.form-bg .form .text p {
+.footer .form-bg .form-container .text p {
   font-size: 20px;
 }
-.form-bg .form .text h1 {
+.footer .form-bg .form-container .text h1 {
   margin: 0;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.footer .form-bg .form-container .form {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .form-bg .form-container .form input {
+  background: none;
+  padding: 15px 60px 15px 15px;
+  border: 1px solid #fff;
+  margin-right: 15px;
+  outline: none;
+}
+.footer .form-bg .form-container .form input::placeholder {
+  color: #ddd1d1;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+.footer .form-bg .form-container .form .btn, .footer .form-bg .form-container .form #home-slider .slider .slide .content .btn-1, #home-slider .slider .slide .content .footer .form-bg .form-container .form .btn-1, .footer .form-bg .form-container .form .btn-bottom {
+  background: #fff;
+}
+.footer .form-bg .form-container .form .btn a, .footer .form-bg .form-container .form #home-slider .slider .slide .content .btn-1 a, #home-slider .slider .slide .content .footer .form-bg .form-container .form .btn-1 a, .footer .form-bg .form-container .form .btn-bottom a {
+  color: #ff8800;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer .map-info-bg {
+  position: absolute;
+  top: 180px;
+  left: 10%;
+  background: #ff8800;
+  width: 400px;
+  height: 280px;
+}
+.footer .map-info-bg .map-info-container {
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.footer .map-info-bg .map-info-container p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer .map-info {
+  position: absolute;
+  top: 150px;
+  right: 8%;
+  text-align: center;
+  width: 450px;
+  height: 350px;
+  background: #fff;
+  opacity: 0.8;
+  padding-top: 60px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.footer .map-info p {
+  text-align: center;
+  margin-top: 20px;
+  color: #665e5e;
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer .policy {
+  text-align: center;
+  margin: 30px 0;
+  height: 80px;
+}
+.footer .policy p {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.footer .policy span {
+  margin-left: 20px;
+}
+.footer .policy span a {
+  font-size: 15px;
+  color: #b42d2d;
+  font-weight: 600;
+}
+.footer .reclama {
+  position: absolute;
+  top: 540px;
+  left: 8%;
+  font-size: 9px;
+  color: gray;
+  font-weight: bold;
+}
+.footer .reclama span {
+  background: gray;
+  border-radius: 50%;
+  line-height: 40px;
+  padding: 15px 0;
+  color: #fff;
 }
 
 * {
