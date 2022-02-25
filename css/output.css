@@ -515,6 +515,9 @@
   margin-bottom: 10px;
   color: #fff;
 }
+.footer .map-info-bg .map-info-container p i {
+  margin-right: 10px;
+}
 .footer .map-info {
   position: absolute;
   top: 150px;
