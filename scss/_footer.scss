@@ -1,140 +1,37 @@
-.footer{
-    position: relative;
-    border-bottom: 5px solid rgb(255, 136, 0);
+#footer{
+        position: relative;
+        border-bottom: 5px solid rgb(255, 136, 0);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        text-align: center;
 
-    .form-bg{
-        background: rgb(255, 136, 0);
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .form-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 60px;
-
-            .text{
-                color: #fff;
-
-                p{
-                    font-size: 20px;
-                }
-                h1{
-                    margin: 0;
-                    font-size: 30px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
-            }
-        
-            .form{
-                display: inline-flex;
-                align-items: center;
-                flex-wrap: wrap;
-
-                    input{
-                        background: none;
-                        padding: 15px 60px 15px 15px;
-                        border: 1px solid #fff;
-                        margin-right: 15px;
-                        outline: none;
-
-                        &::placeholder{
-                            color: rgb(221, 209, 209);
-                            font-size: 16px;
-                            letter-spacing: .6px;
-                        }
-                    }
-
-                    .btn {
-                    background: #fff;
-
-                    a{
-                        color: rgb(255, 136, 0);
-                        font-size: 18px;
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-    }
-
-    .map-info-bg{
-        position: absolute;
-        top: 180px;
-        left: 10%;
-        background: rgb(255, 136, 0);
-        width: 400px;
-        height: 280px;
-
-        .map-info-container{
-            width: 300px;
-            height: 100%;
-            margin: 0 auto;
-            padding-top:30px;
-            
+        .policy{ 
+            margin: 30px 0;
+            position: relative;
+    
             p{
-                margin-bottom: 10px;
-                color: #fff;
-
-                i{
-                    margin-right: 10px;
+                color: black;
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+    
+            span{
+                margin-left: 20px;
+                a{
+                    font-size: 15px;
+                    color: rgb(180, 45, 45);
+                    font-weight: 600;
                 }
             }
         }
-    }
-
-    .map-info{
-        position: absolute;
-        top: 150px;
-        right: 8%;
-        text-align: center;
-        width: 450px;
-        height: 350px;
-        background: #fff;
-        opacity: 0.8;
-        padding-top: 60px;
-        padding-right: 50px;
-        padding-left: 50px;
-
-        p{
-            text-align: center;
-            margin-top: 20px;
-         
-            color: rgb(102, 94, 94);
-            font-size: 15px;
-            font-weight: 500;
-        }
-    }
-
-    .policy{
-        text-align: center;
-        margin: 30px 0;
-        height: 80px;
-
-        p{
-            color: black;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
-
-        span{
-            margin-left: 20px;
-            a{
-                font-size: 15px;
-                color: rgb(180, 45, 45);
-                font-weight: 600;
-            }
-        }
-    }
+    
 
     .reclama{
         position: absolute;
-        top: 540px;
-        left: 8%;
+        top: 3%;
+        left: 5%;
         font-size: 9px;
         color: gray;
         font-weight: bold;
@@ -145,6 +42,71 @@
             line-height: 40px;
             padding: 15px 0;
             color: #fff;
+        }
+    }
+}
+
+@media(max-width: 1023px){
+
+        .form-bg{
+            .form-container{
+                gap: 10px;
+                padding: 20px 0;
+    
+                .text{
+                    text-align: center;
+                    h1{
+                        font-size: 2.5rem;
+                    }
+                }
+            
+                .form{
+                        input{
+                            padding-right: 120px;
+                        }
+                }
+            }
+        }
+    
+        .map-info-bg{
+            top: 210px;
+            width: 300px;
+            height: auto;
+    
+            .map-info-container{
+                width: 200px;
+            }
+        }
+    
+        .map-info{
+            top: 190px;
+            right: 0%;
+            width: 350px;
+    
+            .image{
+                width: 70px;
+                height: auto;
+            }
+    
+                p{
+                    font-size: 14px;
+                }
+        }
+    #footer{
+        min-height: 200px;
+        text-align: center;
+        .policy{ 
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    #footer{
+        .reclama{
+            top: 35%;
         }
     }
 }

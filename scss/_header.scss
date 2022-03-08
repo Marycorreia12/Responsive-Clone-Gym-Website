@@ -97,3 +97,113 @@
         }
     }
 }
+
+@media (max-width: 1023px){
+    #header{
+        .fa-bars{
+            display: block;
+            margin-right: 10px;
+        }
+
+        .fa-times{
+            transform: rotate(180deg);
+        }
+
+        .navbar{
+            position: absolute;
+            top: 100%;
+            left: -100rem;
+            right: 0;
+            background-color: rgba(255, 255, 255,0.9);
+            width: 100%;
+            flex-flow: column;           
+            justify-content: center;
+            align-items: center;
+
+            li{ 
+                text-align: center;
+                width: 100%;
+                a{
+                    font-weight: normal;
+                    font-size: 1.1rem;
+
+                    &:hover{
+                        color: $background;
+                        background: rgb(241, 223, 201);
+                        @include ease;
+                    }
+                }
+
+                .navbar-item{
+                   position: relative;
+                   li{
+                      width: 100%;
+                      text-align: center;
+
+                      a{
+                        font-weight: normal;
+                        font-size: 1.1rem;
+                        }
+                    }
+                    .active{
+                        display: initial;
+                    }
+                }   
+            }
+        }
+         .nav-toggle{
+            left: 0;
+        }
+
+    }
+} 
+
+@media (min-width: 767px){
+    #header{
+        padding: 0.5rem 5%;
+        .logo{
+            img{
+                width: 160px;
+            }
+        }
+        .navbar{
+            li{
+                line-height: 60px;
+                a{
+                    font-size: 1.1rem;
+                }
+            }
+        }   
+    }
+} 
+
+@media (min-width: 500px){
+    #header{
+        padding: 0.5rem 3%;
+        .logo{
+            img{
+                 width: 100px;
+            }
+        }
+
+        
+    .fa-bars{
+        margin-right: 2rem;
+    }
+        .navbar{
+            li{
+                a{
+                    font-size: 1rem;
+                }
+                .navbar-item{
+                    li{
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+}
