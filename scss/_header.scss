@@ -8,8 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .5rem 10%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    background-color: #fff;
+    background-color: $secondary-color;
 
     .logo{
         flex: 1;
@@ -20,17 +19,17 @@
 
     .fa-bars{
         font-size: 1.5rem;
-        color: $background;
+        color: $primary-color;
         cursor: pointer;
         padding: .5rem;
         display: none;
     }
 
     .navbar{
-            display: flex;
-            margin-right: 2rem;
+        position: relative;
+        display: flex;
+        
         li{   
-            
             position: relative;
             line-height: 40px;
             margin-right: 1rem;
@@ -38,7 +37,6 @@
             a{
                 display: block;
                 padding: .5rem;
-                font-size: 1.2rem;
                 font-weight:700;
 
                 i{
@@ -47,7 +45,7 @@
                 }
 
                 &:hover{
-                    color: $background;
+                    color: $primary-color;
                     @include ease;
                 }
             }
@@ -61,7 +59,7 @@
 
         .navbar-item {
             position: absolute;
-            background: #fff;
+            background: $secondary-color;
             top: -100%;
             left: 0;
             width: 150px;
@@ -70,19 +68,26 @@
 
             li{
                 width: 100%;
+
                 a{
                     display: block; 
-                    font-size: 1.1rem;
                     font-weight: normal;
 
                     &:hover{
-                        color: $background;
+                        color: $primary-color;
                         background: rgb(241, 223, 201);
                         @include ease;
                     }
                 }
             }
         }
+
+    }
+
+    .acess{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
     }
 
     .icons{
@@ -128,7 +133,7 @@
                     font-size: 1.1rem;
 
                     &:hover{
-                        color: $background;
+                        color: $primary-color;
                         background: rgb(241, 223, 201);
                         @include ease;
                     }
@@ -186,10 +191,6 @@
             }
         }
 
-        
-    .fa-bars{
-        margin-right: 2rem;
-    }
         .navbar{
             li{
                 a{
@@ -204,6 +205,14 @@
                 }
             }
         }  
+
+        .icons{
+            i{
+                display: block;
+                margin-bottom: .6rem;
+            }
+           
+        }
     }
 
 }
