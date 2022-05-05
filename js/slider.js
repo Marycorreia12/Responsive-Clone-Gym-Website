@@ -1,20 +1,8 @@
-/* menu */
-const menuBtn = document.querySelector('#menu');
-const navbar = document.querySelector('.navbar');
-const item = document.querySelector('.item');
-
-menuBtn.addEventListener('click', function(){
-    menuBtn.classList.toggle('fa-times');
-    navbar.classList.toggle('nav-toggle');
-});
-
-/* Slides the images */
-
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false;
-const intervalTime = 5000;
+const auto = true;
+const intervalTime = 10000;
 let slideInterval;
 
 const nextSlide = () => {
@@ -49,7 +37,7 @@ const prevSlide = () => {
     setTimeout(() => current.classList.remove('current'));
 }
 
-//Button events
+/* Slides the images */
 next.addEventListener('click', e => {
     nextSlide();
     if(auto){

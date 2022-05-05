@@ -1,6 +1,5 @@
 #home-slider{
     position: relative;
-    min-height: 100vh;
 
    .slider{
        position: relative;
@@ -26,15 +25,15 @@
            }
 
            &:first-child{
-                background: url('/assets/img/pexels-photo-2247179.jpeg') no-repeat center center/cover;
+                background: url('/img/pexels-photo-2247179.jpeg') no-repeat center center/cover;
 
            }
             &:nth-child(2){
-                background: url('/assets/img/pexels-photo-1480520.jpeg') no-repeat center center/cover;
+                background: url('/img/pexels-photo-1480520.jpeg') no-repeat center center/cover;
             }
 
             &:nth-child(3){
-                background: url('/assets/img/pexels-victor-freitas-841130.jpg') no-repeat center center/cover;
+                background: url('/img/pexels-victor-freitas-841130.jpg') no-repeat center center/cover;
             }
     
                 .content{

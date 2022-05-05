@@ -1,13 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Charm', cursive;
-
     .home-bg{
-        background: url('/assets/img/homepagev3.jpg');
+        background: url('/img/homepagev3.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -19,7 +11,7 @@ body{
 
         .container{
             overflow: hidden;
-            width: 300px;
+            width: 350px;
             height: auto;
             background-color: $secondary-color;
             opacity: 0.8;
@@ -57,10 +49,13 @@ body{
                     line-height: 40px;
                     background-color: $primary-color;
                     @extend .btn;
-                    border: 1px solid black !important;
                     color: #fff;
                     font-size: 18px;
                     font-weight: bold;
+
+                    &:hover{
+                        background: rgba($primary-color, 0.8) !important;
+                    }
                 }
 
                 .checkbox{
@@ -123,11 +118,10 @@ body{
         
                 }
             }
-
             
             p{
-                color: white;
-                background-color: rgb(36, 34, 34);
+                color: $secondary-color;
+                background-color: $third-color;
                 font-size: 14px;
                 text-align: center;
                 font-weight: bold;
@@ -141,5 +135,3 @@ body{
             @include ease;
         }
     } 
-    
-}
