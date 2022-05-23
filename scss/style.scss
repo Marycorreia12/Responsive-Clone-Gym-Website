@@ -10,6 +10,7 @@
 @import 'zonasTreino';
 @import 'aulasGrupo';
 @import 'acess';
+@import 'breakpoints';
 
 *{
     box-sizing: border-box;
@@ -42,6 +43,7 @@ body{
     outline: none;
     position: relative;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
  a{
