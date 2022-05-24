@@ -1949,7 +1949,7 @@
 }
 
 .home-bg {
-  background: url("/img/homepagev3-compressed.jpg");
+  background: url("../../img/homepagev3-compressed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
