@@ -238,15 +238,15 @@
 }
 
 #home-slider .slider .slide:first-child {
-  background: url("/img/pexels-photo-2247179.jpeg") no-repeat center center/cover;
+  background: url("/img/pexels-photo-2247179-compressed.jpg") no-repeat center center/cover;
 }
 
 #home-slider .slider .slide:nth-child(2) {
-  background: url("/img/pexels-photo-1480520.jpeg") no-repeat center center/cover;
+  background: url("/img/pexels-photo-1480520-compressed.jpg") no-repeat center center/cover;
 }
 
 #home-slider .slider .slide:nth-child(3) {
-  background: url("/img/pexels-victor-freitas-841130.jpg") no-repeat center center/cover;
+  background: url("/img/pexels-victor-freitas-841130-compressed.jpg") no-repeat center center/cover;
 }
 
 #home-slider .slider .slide .content {
@@ -814,10 +814,9 @@
 
 #section-grid .grid-container .grid {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 300px;
-          flex: 1 0 300px;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
   width: 360px;
-  height: 460px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -872,9 +871,7 @@
     width: 400px;
     text-align: center;
   }
-  #section-grid {
-    margin: 200px 0;
-  }
+ 
   #section-home .section-home-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -895,7 +892,7 @@
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: center;
   }
   #section-home .section-home-container .image-home .image-home1 {
     width: 350px;
@@ -919,6 +916,9 @@
 }
 
 @media (max-width: 767px) {
+  #section-grid .text {
+    padding: 50px 10%;
+  }
   #section-image .image-container {
     -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 90%, 0% 100%);
             clip-path: polygon(0 1%, 100% 1%, 100% 90%, 0% 100%);
@@ -973,7 +973,6 @@
     font-size: 1rem;
   }
   #section-grid .text {
-    padding: 300px 0 20px 0;
     text-align: center;
   }
   #section-grid .text h2 {
@@ -1013,8 +1012,8 @@
   }
   #section-grid .grid-container .grid {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 400px;
-            flex: 1 0 400px;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
     height: 280px;
     overflow: hidden;
   }
@@ -1393,7 +1392,6 @@
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
   width: 360px;
-  height: 500px;
   background-color: #ff8800;
   color: #fff;
   overflow: hidden;
@@ -1473,7 +1471,6 @@
   }
   #section-grid-zonas .grid-container .grid {
     width: 100%;
-    height: 250px;
   }
   #section-grid-zonas .grid-container .grid .image-grid {
     height: 125px;
@@ -1682,10 +1679,9 @@
 
 #section-grid-grupo .grid-container .grid {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 300px;
-          flex: 1 0 300px;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
   width: 320px;
-  height: 480px;
   background-color: #ff8800;
   -webkit-box-shadow: 5px 5px 10px 2px black;
           box-shadow: 5px 5px 10px 2px black;
@@ -1883,9 +1879,8 @@
   }
   #section-grid-grupo .grid-container .grid {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 400px;
-            flex: 1 0 400px;
-    height: 280px;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
     overflow: hidden;
   }
   #section-grid-grupo .grid-container .grid .image-grid {
@@ -1932,9 +1927,9 @@
   }
   #section-grid-grupo .grid-container .grid {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 400px;
-            flex: 1 0 400px;
-    height: 280px;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+    height: auto;
     overflow: hidden;
   }
   #section-grid-grupo .grid-container .grid .image-grid {
@@ -1954,7 +1949,7 @@
 }
 
 .home-bg {
-  background: url("/img/homepagev3.jpg");
+  background: url("/img/homepagev3-compressed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
