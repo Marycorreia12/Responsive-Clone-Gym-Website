@@ -24,7 +24,6 @@
 }
 
 #header nav {
-  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,9 +132,12 @@
           transform: scale(1.4);
 }
 
+
+
+
 @media (max-width: 1023px) {
-  #header nav {
-    width: 200px;
+  #header{
+    padding: .5rem 2rem;
   }
   #header nav .navbar {
     position: absolute;
@@ -193,6 +195,16 @@
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+}
+
+@media (max-width: 767px) {
+  #header{
+    padding: .5rem 1rem;
+  }
+  
+#header .logo {
+  width: 100px;
+}
 }
 
 #home-slider {
@@ -265,13 +277,15 @@
   font-size: 4.2rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #home-slider .slider .slide .content h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 #home-slider .slider .slide .content .btn-1 {
@@ -362,35 +376,37 @@
     line-height: 40px !important;
   }
   #home-slider .slide .content h1 {
-    font-size: 2.5rem !important;
-    margin-bottom: 0 !important;
+    font-size: 4rem !important;
+    margin-bottom: 0;
   }
   #home-slider .slide .content h2 {
-    font-size: 1.1rem !important;
-    max-width: 500px;
+    font-size: 1.5rem !important;
+    max-width: 500px !important;
   }
   #home-slider .slide .content .btn-1 {
     margin-top: 10px !important;
-    font-size: .8rem !important;
+    font-size: 1rem !important;
   }
 }
 
 @media (max-width: 767px) {
+  #home-slider .slider {
+    height: 60vh;
+  }
+
   #home-slider .slider .slide .content {
-    line-height: 30px !important;
     padding-left: 40px !important;
-    padding-top: 20px !important;
+    padding-top: 100px !important;
   }
   #home-slider .slider .slide .content h1 {
     font-size: 2.5rem !important;
-    margin-bottom: 0 !important;
+    margin-bottom: .5rem !important;
   }
   #home-slider .slider .slide .content h2 {
     font-size: 1.1rem !important;
-    width: 100%;
+    margin-bottom: .5rem;
   }
   #home-slider .slider .slide .content .btn-1 {
-    margin-top: 10px !important;
     font-size: .8rem !important;
   }
   #home-slider .slider .slide .contact {
@@ -402,25 +418,6 @@
   .btn-bottom {
     font-size: .8rem;
     width: 180px;
-  }
-}
-
-@media (max-width: 500px) {
-  #home-slider .slider .slide .content {
-    line-height: 20px !important;
-    padding-right: 30px;
-  }
-  #home-slider .slider .slide .content h1 {
-    font-size: 1.5rem !important;
-    margin-bottom: 0;
-  }
-  #home-slider .slider .slide .content h2 {
-    font-size: .6rem !important;
-  }
-  #home-slider .slider .slide .content .btn-1 {
-    margin-top: 10px !important;
-    color: #fff;
-    font-size: .5rem !important;
   }
 }
 
@@ -511,9 +508,6 @@
 }
 
 @media (max-width: 1023px) {
-  #home-cards {
-    min-height: 100vh;
-  }
   #home-cards .cards-container .card .info h1 {
     font-size: 1.4rem;
   }
@@ -1059,6 +1053,7 @@
 
 #form .form-bg {
   background: #ff8800;
+  margin-top: 50px;
   min-height: 150px;
   -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -1182,7 +1177,7 @@
 
 @media (max-width: 767px) {
   #form .form-bg {
-    padding: 100px 0 120px 0;
+    padding: 50px 0;
   }
   #form .form-bg .form-container .text h1 {
     font-size: 25px;
@@ -1455,9 +1450,6 @@
     line-height: 60px;
     width: 100%;
   }
-  #section-grid-zonas {
-    margin: 300px 0;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1643,7 +1635,6 @@
 }
 
 #section-grid-grupo {
-  min-height: 200vh;
   background: #fff;
   margin-bottom: 150px;
   z-index: 9;
@@ -1752,9 +1743,7 @@
     width: 400px;
     text-align: center;
   }
-  #section-grid-grupo {
-    margin: 200px 0;
-  }
+
   #section-home-grupo .section-home-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1805,7 +1794,7 @@
             clip-path: polygon(0 1%, 100% 1%, 100% 90%, 0% 100%);
   }
   #section-image-grupo .image-container .image {
-    height: 100vh;
+    height: 60vh;
   }
   #section-image-grupo .image-container .details {
     -webkit-box-pack: center;
@@ -1854,8 +1843,8 @@
     font-size: 1rem;
   }
   #section-grid-grupo .text {
-    padding: 300px 0 20px 0;
-    text-align: center;
+    text-align: start;
+    padding: 50px 10%;
   }
   #section-grid-grupo .text h2 {
     font-size: 1.4rem;

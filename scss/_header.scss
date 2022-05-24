@@ -16,7 +16,6 @@
     }
 
     nav{
-        width: 800px;
         display: flex;
         align-items: center;
         ul{
@@ -114,8 +113,8 @@
 
 @media (max-width: 1023px){
     #header{
+        padding: 0;
         nav{
-            width: 200px;
             .navbar{
                 position: absolute;
                 top: 100%;
@@ -170,5 +169,4 @@
        }
     }
 } 
-
 
